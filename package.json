@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "vite": "^4.4.9"
+  },
+  "name": "batmans",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.18.20",
+    "fsevents": "^2.3.3",
+    "nanoid": "^3.3.6",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.30",
+    "rollup": "^3.29.2",
+    "source-map-js": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
