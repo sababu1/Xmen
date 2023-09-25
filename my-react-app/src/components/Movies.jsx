@@ -42,10 +42,10 @@ const Movies = () => {
   };
 
   return (
-    <div class = "title">
+    <div className = "title">
       <h1>X-Men Movies</h1>
 
-      <div class="movie-list">
+      <div className="movie-list">
         {movies.map((movie) => (
           <div key={movie.imdbID} class="movie-item">
             <img src={movie.Poster} alt={'Xmen'} />
@@ -58,8 +58,8 @@ const Movies = () => {
       </div>
 
       {filteredMovie && (  //conditional rendering for SHowDetails button when fetchMovieDetails function is called
-        <div class="topWindow">
-          <div class="filtered-movie">
+        <div className="topWindow">
+          <div className="filtered-movie">
             <button onClick={closeDetails} class="x-button">
               Close
             </button>
