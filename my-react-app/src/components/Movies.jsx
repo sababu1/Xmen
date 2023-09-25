@@ -11,7 +11,7 @@ const Movies = () => {
     const fetchXMenMovies = async () => {  //Similar to a GET request
       const apiKey = 'f22241e5';
       const response = await fetch(
-        `http://www.omdbapi.com/?s=X-men&apikey=${apiKey}`
+        `https://www.omdbapi.com/?s=X-men&apikey=${apiKey}`
       );
 
       if (response.ok) { //checks for successful response
@@ -28,7 +28,7 @@ const Movies = () => {
   const fetchMovieDetails = async (imdbID) => { //finds details using imdbID number
     const apiKey = 'f22241e5'; 
     const response = await fetch(
-      `http://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`
+      `https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`
     );
 
     if (response.ok) {  //On success adds data to 'filtered movie' state
