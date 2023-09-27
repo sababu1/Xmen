@@ -1,16 +1,58 @@
-.title {
+
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f1c71e;
-
-}
-
-.topWindow {
+  }
+  
+  .title {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .movie-item {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.05);
+  }
+ 
+  
+  .show-details-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .topWindow {
     position: fixed;
-    /* background-color: rgba(210, 163, 163, 0.7);  */
-    background-image: url('./public/xmen.jpeg');
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./public/xmen.jpeg');
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,42 +61,27 @@
   
  
   .filtered-movie {
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 6px;
+    padding: 20px;
     text-align: left;
-    background-color: #fff;
-    padding: 18px;
-    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
   
   
   .x-button {
-   justify-content: end;
-    align-items: end;
+    position: absolute;
     top: 10px;
     right: 10px;
     background-color: #f1c71e;
     border: none;
-   
-    
-  }
-  
-
-  .movie-list {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #859eb9;
-    
-  } 
-  
-  .movie-item button {
-    background-color: #007bff;
-    color: #fff;
-
-    align-items: center;
+    color: #333;
     padding: 5px 10px;
     border-radius: 5px;
-   
+    cursor: pointer;
+  }
+  
+  .x-button:hover {
+    background-color: #e0b522;
   }
   
